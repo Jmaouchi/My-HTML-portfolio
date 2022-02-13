@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+  --main-color:rgb(72, 74, 207);
+  --black:black;
+  --white:white;
+  --border-radius: 50px;
+}
+
+body{
+  background-image: url('../images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: antiquewhite; 
+}
+
+body:hover h2{
+  color: var(--white);
+  border-radius: var(--border-radius);
+  transition: 1s;
+}
+
+body:hover .section-one button{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+body:hover .section-one button a{
+  color: var(--white);
+  transition: 1.3s;
+  font-weight: bold;
+}
+
+/* header start  */
+header{
+  background-color: none;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: end;
+}
+
+header h1{
+  position: relative;
+  font-size: 35px;
+  color:var(--main-color);
+  text-transform: initial;
+}
+
+/* section one starts */
+section.section-one{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.section-one-content{
+  margin-top: 35px;
+  padding: 100px;
+}
+
+.section-one-content h2{
+  font-size: 65px;
+  text-align: center;
+  color: transparent;
+}
+
+.section-one-content p{
+  color: rgb(245, 236, 223);
+  font-size: 35px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.section-one-content-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-one-content-p .border{
+  width: 150px;
+  background-color:var(--white);
+  height: 1.5px;
+  margin: 10px;
+}
+
+.section-one-content button{
+  padding: 15px; 
+  background-color: var(--white);
+  border-radius: 100px;
+  cursor: pointer;
+  display: hidden;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-one-content button a{
+  color: var(--main-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.section-one-content button:hover  {
+  background-color: var(--main-color);
+}
+
+.section-one-content button:hover a{
+  color: aliceblue;
+} 
+
+
+
+
+
+/* media queries starts */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media (max-width: 980px) {
+
+  .section-one-content p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+  .section-one-content h2{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+  .section-one-content p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+  .section-one-content h2{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+  
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  .section-one-content p{
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .section-one-content h2{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+}
+
