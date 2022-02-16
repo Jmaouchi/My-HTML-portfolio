@@ -14,7 +14,7 @@
 
 body{
   font-family: 'Courier New', Courier, monospace;
-  height: 250vh;
+  background-color: var(--color-black);
 }
 
 /* adding a scrollbar for the page */
@@ -48,7 +48,7 @@ header {
 
 header h1{
   font-size: 25px;
-  color: aqua;
+  color: var(--main-color);
   cursor: pointer;
   text-shadow: 5px 15px 10px var(--main-color);
 }
@@ -111,6 +111,7 @@ header ul li a{
 
 
 /* section one starts here */
+  
 .section-one {
   width: 100%;
   background-image: url('../images/section-one-image.jpg');
@@ -125,10 +126,11 @@ header ul li a{
 /* section one ends */
 
 
-/* section two starts */
+/* section two starts or section about me  */
 .section-two{
-  background-color: black;
+  margin-top: 50px;
   color: var(--main-color);
+  width: 100%;
 }
 
 .flex{
@@ -148,6 +150,7 @@ header ul li a{
     background-color:var(--main-color);
     padding: 5px;
     border-radius: var(--border-radius);
+    margin: 15px;
 }
 
 .flex .border {
@@ -166,11 +169,8 @@ header ul li a{
 
 .section-two-content .image{
   opacity: 60%;
-  padding: 20px;
-  color: #024e76;
-  bottom: 120px;
-  width: 40%;
-  margin: 3.5%;
+  width: 50%;
+  margin-top: 35px;
 }
 
 .section-two-content .image img {
@@ -183,9 +183,8 @@ header ul li a{
   width: 35%;
   text-align: center;
   margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.2;
+  color: var(--color-white);
+  font-size: 13px;
 }
 
 .section-two-content-context p{
@@ -203,15 +202,19 @@ header ul li a{
   color: var(--main-color);
   font-size: 20px;
 }
+
+.bellow{
+  font-size: 30px;
+}
 /* section two ends */
 
 
 
-/* section three starts */
+/* section three starts or section my work */
 section.section-three{
-  background-color: var(--color-black);
   color: var(--main-color);
   width: 100%;
+  margin-top: 50px;
 }
 
 section.section-three .section-three-content-wrap{
@@ -229,7 +232,7 @@ section.section-three .section-three-content-wrap{
   flex: 1 1 33%;
   margin-top: 50px;
   background-color: #024e76;
-  color: white;
+  color: var(--color-white);
   padding: 10rem 6rem;
   text-align: center;
   border-radius: var(--border-radius);
@@ -244,6 +247,9 @@ section.section-three .section-three-content-wrap{
   height: 100%;
   width: 100%;
   background-image: url('../images/runBudy.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
   opacity: 30%;  
   position: absolute;
   top: 0px;
@@ -257,7 +263,9 @@ section.section-three .section-three-content-wrap{
   content: "";
   height: 100%;
   width: 100%;
-  background-image: url('../images/image.jpg');
+  background-image: url('../images/videoGallery.png');
+  background-position: center;
+  background-repeat:no-repeat;
   opacity: 30%;  
   position: absolute;
   top: 0px;
@@ -281,11 +289,47 @@ section.section-three .section-three-content-wrap{
 }
 
 
-.section-three-content-wrap .col.loan-calculator::before{
+.section-three-content-wrap .col.coffee-website::before{
   content: "";
   height: 100%;
   width: 100%;
-  background-image: url('../images/image.jpg');
+  background-image: url('../images/coffeeWebsite.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 30%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+
+.section-three-content-wrap .col.task-list::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/todo\ list.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 30%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+.section-three-content-wrap .col.color-changing::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/colorChanging.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
   opacity: 30%;  
   position: absolute;
   top: 0px;
@@ -302,8 +346,8 @@ section.section-three .section-three-content-wrap{
 }
 
 .section-three-content-wrap .col:active{
-  background-color: white;
-  color: black;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .section-three-content-wrap .col h4{
@@ -330,19 +374,23 @@ section.section-three .section-three-content-wrap{
 }
 
 .section-three-content-wrap .col .btn a{
+  display: flex; /* i displayed it as flex to add padding whithout effecting the text positioning. this will allow us whenever we click the outside of the a tag it will still run the click */
+  text-align: center;
+  align-items: center;
+  padding: 0 20px 0 20px;
   color: var(--color-white);
 }
 
 .section-three-content-wrap .col:active .btn{
-  background-color: black;
+  background-color: var(--color-black);
 }
 .section-three-content-wrap .col:active .btn a{
-  color: white;
+  color: var(--color-white);
 }
 
 .section-three-content-wrap .col:hover button{
-  background-color: black;
-  border: 1px solid white;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-white);
 }
 
 .section-three-content-wrap .col:hover button a{
@@ -353,3 +401,48 @@ section.section-three .section-three-content-wrap{
   text-decoration: none;
 }
 
+
+
+
+/* section four starts or section get in touch  */
+.section-four {
+  color: var(--color-white);
+  width: 100%;
+  margin-top: 50px;
+}
+
+.section-four-context {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.section-four-context-content {
+  margin:45px;
+}
+
+.section-four-context img {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--main-color);
+
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.section-four-context img:hover{
+  width: 150px;
+  
+}
+
+.section-four-context h5{
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.section-four-context p {
+  font-size: 19px;
+  max-width: 400px;
+}
