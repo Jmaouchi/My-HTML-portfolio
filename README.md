@@ -1,10 +1,10 @@
 # Portfolio
 ![](asset/images/djigo.jpg)
 ## Purpose
-A portfolio website will discribe who Im I and what i can do.
-will display all my projects 
-will display who im
-will display my contact iformations 
+### A portfolio website will discribe who Im I and what i can do.
+1- will display all my projects
+2- will display who im
+3- will display my contact iformations 
 
 ## Built With
 * HTML
