@@ -1,5 +1,5 @@
 # Portfolio
-![](C:\Users\12106\OneDrive/Desktop\My-Portfolio\asset\images\109-1090444_web-design-training-in-erode-web-design-logo
+My-Portfolio\asset\images\109-1090444_web-design-training-in-erode-web-design-logo
 ## Purpose
 A portfolio website will discribe who Im I and what i can do.
 will display all my projects 
