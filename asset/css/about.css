@@ -19,7 +19,7 @@ body{
 
 /* adding a scrollbar for the page */
 html::-webkit-scrollbar{
-  width: .5rem;
+  width: 1rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -28,7 +28,7 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
   background:var(--main-color);
-  border-radius: 5rem;
+  border-radius: 5px;
 }
 
 
@@ -176,7 +176,6 @@ header ul li a{
 .section-two-content .image img {
   border-radius: var(--border-radius);
   width: 100%;
-  height: 80%;
 }
 
 .section-two-content .section-two-content-context {
@@ -240,7 +239,6 @@ section.section-three .section-three-content-wrap{
   box-shadow: 0px 0px 10px var(--main-color);
   z-index: 100;
 }
-
 
 .section-three-content-wrap .col.run-buddy::before{
   content: "";
@@ -486,7 +484,7 @@ section.section-three .section-three-content-wrap{
   
   .section-two-content .section-two-content-context {
     flex: 0 30%;
-    width:30%;
+    width:100%;
     text-align: center;
     color: var(--color-white);
   }
@@ -517,6 +515,7 @@ section.section-three .section-three-content-wrap{
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+
   /* header start */
   header h1{
     font-size: 16px;
@@ -532,60 +531,47 @@ section.section-three .section-three-content-wrap{
 
 
 /* section three start */
-  .section-two{
-    margin-top: 50px;
-    color: var(--main-color);
-    width: 100%;
-  }
+.section-two-content {
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
 
-  .section-two-content{
-    margin-top: 55px;
-    border: 3px solid var(--main-color);
-    border-radius: var(--border-radius);
-  }
-  
-  .section-two-content:hover {
-    background-color:var(--color-white);
-  }
+.section-two-content .image{
+  padding: 45px;
+  margin-top: 55px;
+  flex:100%;
+  opacity: 100%;
+  width: 100%;
+}
 
-  .section-two-content:hover h4, .section-two-content:hover p {
-    color: var(--color-black);
-  }
+.section-two-content-context{
+  border:  5px solid black;
+  flex: 100%;
+  width: 100%;
+  padding: 25px;
 
-  .section-two-content:hover .image {
-    opacity: 100%;
-  }
+}
+  
+.about-me-context h4{
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-size: 32px;
+}
 
-  .section-two-content .image{
-    opacity: 70%;
-    margin-top: 5px;
-    flex: 1 12%;
-  }
+
+.section-two-content-context p{
+  font-size: 15px;
+}
   
-  .section-two-content .section-two-content-context {
-    flex: 12%;
-    text-align: center;
-    color: var(--color-white);
-  }
-  
-  .section-two-content-context p{
-    font-size: 15px;
-  }
-  
-  .about-me-context {
+.about-me-context {
     border-bottom: none;
     border-radius: var(--border-radius);
-  }
-  
-  .about-me-context h4{
-    margin-bottom: 10px;
-    color: var(--main-color);
-    font-size: 15px;
-  }
-  
-  .bellow{
-    font-size: 15px;
-  }
+}
+
+.bellow{
+    font-size: 25px;
+}
 
 
 /* section three starts or section my work */
@@ -630,11 +616,11 @@ section.section-three .section-three-content-wrap{
 }
   
 .section-four-context img {
-    border-radius: var(--border-radius);
-    border: 2px solid var(--main-color);
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
+  border-radius: var(--border-radius);
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
   
 .section-four-context img:hover{
   width: 100px;
@@ -659,8 +645,8 @@ section.section-three .section-three-content-wrap{
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-/* header start */
 
+/* header start */
 header{
   display: flex;
   flex-direction: column;
@@ -709,19 +695,21 @@ header ul li:hover{
 
 /* section three start */
   .section-two-content {
-    display: flex;  
+    display: flex;
     flex-direction: column;
+    flex: 100%;
   }
   
   .section-two-content .image{
-    flex: 100%;
+    flex:100%;
     opacity: 80%;
     width: 100%;
     margin-top: 5px;
   }
 
   .section-two-content-context{
-    flex: 0 100%;
+    border:  5px solid black;
+    flex: 100%;
     width: 80%;
   }
 
