@@ -708,15 +708,17 @@ header ul li:hover{
   }
 
   .section-two-content-context{
-    border:  5px solid black;
+
     flex: 100%;
     width: 80%;
   }
 
 
   .about-me-context {
+    padding: 25px;
     border-bottom: none;
     border-radius: var(--border-radius);
+    border:  2px solid var(--main-color);
   }
   
   .about-me-context h4{
