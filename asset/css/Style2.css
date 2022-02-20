@@ -110,8 +110,7 @@ header ul li a{
 
 
 
-/* section one starts here */
-  
+/* section one starts here */ 
 .section-one {
   width: 100%;
   background-image: url('../images/section-one-image.jpg');
@@ -124,6 +123,7 @@ header ul li a{
   width: 100%;
 }
 /* section one ends */
+
 
 
 /* section two starts or section about me  */
@@ -340,7 +340,6 @@ section.section-three .section-three-content-wrap{
 .section-three-content-wrap .col:hover{
   background-color: var(--color-black);
   color: var(--main-color);
-  z-index: 100;
 }
 
 .section-three-content-wrap .col:active{
@@ -442,7 +441,6 @@ section.section-three .section-three-content-wrap{
 .section-four-context p {
   font-size: 15px;
 }
-
 
 
 
