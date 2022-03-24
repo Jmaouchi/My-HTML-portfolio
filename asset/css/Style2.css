@@ -336,6 +336,40 @@ section.section-three .section-three-content-wrap{
   z-index: -1;
 }
 
+.section-three-content-wrap .col.weather-recipe::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/readme.gif');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 30%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+
+.section-three-content-wrap .col.scheduler::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/Schedule.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 30%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+
 
 .section-three-content-wrap .col:hover{
   background-color: var(--color-black);
