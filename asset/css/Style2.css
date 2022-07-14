@@ -369,6 +369,22 @@ section.section-three .section-three-content-wrap{
   z-index: -1;
 }
 
+.section-three-content-wrap .col.mern::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/mern.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  opacity: 30%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+
 
 
 .section-three-content-wrap .col:hover{
